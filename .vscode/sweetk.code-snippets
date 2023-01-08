@@ -1,0 +1,49 @@
+{
+	// Place your sweet-home-webapp 작업 영역 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Sweatk Function Component": {
+		"scope": "javascriptreact,typescriptreact",
+		"prefix": "swfc",
+		"body": [
+			"import React from 'react'",
+			"import styled from 'styled-components'",
+			"",
+			"export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}() {",
+			"     return (",
+			"          <div>",
+			"",
+			"          </div>",
+			"     );",
+			"}",
+			"",
+			""
+		],
+		"description": "sweetk Function Component"
+	},
+	"ignore eslint": {
+		"prefix": "ign",
+		"body": [
+			" // eslint-disable-next-line"
+		],
+		"description": "ignore eslint"
+	},
+	"import service": {
+		"prefix": "ims",
+		"body": [
+			"import service from '@/modules/Common/service'"
+		],
+		"description": "import service"
+	},
+	"import redux": {
+		"prefix": "imr",
+		"body": [
+			"import { useDispatch, useSelector } from 'react-redux'"
+		],
+		"description": "import redux"
+	}
+}
