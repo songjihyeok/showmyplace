@@ -18,7 +18,7 @@ const BottomNavigationComponent = () => {
 
      useEffect(() => {
           if (value === 0) {
-               navigate("list")
+               navigate("/")
                return
           }
           if (value === 1) {

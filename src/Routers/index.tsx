@@ -1,7 +1,7 @@
 import React from 'react'
 import {
      Routes,
-     Route,
+     Route
 } from "react-router-dom";
 
 import Home from "../pages/Home"
@@ -12,7 +12,8 @@ import MainLayout from '../Layout/MainLayout';
 export default function Routers() {
      return (
           <Routes>
-               <CustomLayoutRoute exact path="/" component={Home} layout={MainLayout} />
+               <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+               {/* <CustomLayoutRoute exact path="/" component={Home} layout={MainLayout} /> */}
           </Routes>
      )
 }
